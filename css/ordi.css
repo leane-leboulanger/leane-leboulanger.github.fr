@@ -1,0 +1,264 @@
+@media(min-width: 1000px)
+{
+
+    body{
+        overflow-x: hidden; 
+    }
+    
+    .homepage{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .fond{
+        background-image: url(../media/video_main_ordi.gif);
+        padding: 0 7vw 0 7vw;
+        background-repeat: repeat-y;
+    }
+
+/*******************************header*************************/
+    header{
+        padding-top: 5vw;
+    }
+
+    #burger>div{
+        margin: 8px;    
+        width: 3.5vw;
+    }
+
+    header>p, #close_burger{
+        font-size: 1.6vw;
+    }
+
+    .div_link_burger>a{
+        font-size: 4.1vw;
+    }
+
+    .close{
+        bottom: 32vh;
+    }
+
+/********************contenu de la homepage*********************/
+
+    .homepage>h1{
+        margin-top: 23vh;
+        font-size: 3.1vw;
+    }
+
+    .homepage>.texteMain{
+        font-size: var(--size-text);
+        width: 40vw;
+    }
+
+    .fleche{    
+        margin-top: 25vh;
+        font-size: 3vw;
+    }
+    
+    .scroll{
+        margin-top: 1vh;
+        font-size: 1em;
+    }
+
+/*********************page de projet************************/
+
+.tel_projet{ 
+    display: none;
+}
+    
+/*taille max*/
+.projet>div{
+    max-height: 60vh;
+}
+
+#projet>div{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    max-height: 30vw;
+}
+
+.une_image{
+    width: 50%;
+    height: 100%;
+    margin-right: 2vh;
+    display: block;
+}
+
+.une_image>a>img{
+    height: 100%;
+    width: 100%;
+}
+
+.deux_image{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/**** taille image verticale****/
+.image_deux{
+    height: 100%;
+    width: 100%;
+    margin-right: 2vh;
+    
+}
+
+.image_trois{
+    height: 100%;
+    width: 100%;
+    
+}
+
+.image_deux>a>img, .image_trois>a>img{
+    height: 100%;
+    width: 100%;
+}
+
+/***textte***/
+
+#projet>h2{
+    padding: 9vh 0 11vh;
+    font-size: 3vw;
+}
+
+
+/***********************section a propos*********************/
+
+    .apropos{
+        display: flex;
+        padding: 0;
+    }
+
+    .image_ordi{
+        display: block;
+        width: 50%;
+    }
+
+    .apropos>div{
+        padding-left: 7vw;
+    }
+
+    .apropos>div>h3{
+        padding-top: 10vh;
+        font-size: 3.8vw;
+    }
+
+    .text_presentation{
+        font-size: 2.2vh;
+        width: 35vw;
+    }
+
+    .text_cv{
+        font-size: 1em;
+        margin-top: 3.8vw;
+    }
+
+    .apropos>div>a{
+        width: 15vw;
+        height: 4vw;
+        font-size: 1.1vw;
+    }
+    
+    .apropos>div>a>img{
+        width: 1.6vw;
+    }
+
+/***************************SECTION CONTACT************************/
+
+    .contact{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contact>h3{
+        font-size: 3.8vw;
+        padding-top: 9vw;
+        padding-bottom: 0;
+    }
+
+    .contact>p{
+        font-size: var(--size-text);
+        margin-top: 0;
+        font-weight: 200;
+        font-size: 2.5vh;
+    }
+
+    .div_mail{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 9vh;
+    }
+
+    .contact>.div_mail>p{
+        font-size: 1.3vw;
+    }
+
+    .contact>.div_mail>img{
+        margin-top: 0;
+        margin-right: 1vw;
+        width: 2vw;
+    }
+
+/***********formualaire***************/
+
+    form{
+        width: 35vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input{
+        width: 23vw;
+        padding: 20px 8px 30px 0px;
+        margin-bottom: 3vh;
+        font-size: 1.2vw;
+    }
+    
+    textarea{
+        width: 23vw;
+        padding: 0px 0px 0px 0px;
+        margin-bottom: 2vh;
+        font-size: 1.2vw;
+    }
+
+    .contact>form>button{
+        width: 23vw;
+        height: 6vh;
+        margin-top: 5vh;
+        font-size: 1.1em;
+    }
+
+
+
+
+
+    /*annimation sur curseur*/
+    .cursor {
+        position: fixed;
+        border-radius: 50%;
+        transform: translateX(-5%) translateY(-5%);
+        pointer-events: none;
+        left: 50vw;
+        top: 50%;
+        mix-blend-mode: difference;
+        z-index: 10000;
+        background-color: white;
+        border: 2px solid white;
+        height: 30px;
+        width: 30px;
+        transition: all 200ms ease-out;
+    }
+
+
+}

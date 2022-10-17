@@ -1,0 +1,398 @@
+
+body{
+    color: white;
+    font-family: 'Poppins';
+}
+
+body>section{
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 120vh;
+}
+
+/****************************HOME PAGE***********************************/
+
+.fond{
+    background-image: url(../media/video_telephone-min.gif);s
+    background-repeat: repeat;
+    padding-left: 9vw;
+    padding-right: 9vw;
+}
+
+
+/*****************HEADER*******************/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12vw;
+}
+
+#burger>div{
+    margin: 6px;    
+    width: 10vw;
+    height: 1px;
+    border: 1px white solid;
+    background-color: white;
+}
+
+#burger:hover{
+    cursor: pointer;
+}
+
+header>p{
+    font-size: 6vw;
+}
+
+.fond>div{
+    display: none;
+}
+
+/***********deroulant burger style*******/
+#deroulantBurger{
+    display: block;
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: -100vw;
+    background-color: black;
+}
+
+.div_link_burger{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding-top: 12vh;
+    height: 58%;
+}
+
+.div_link_burger>a{
+    color: white;
+    font-size: 9vw;
+    text-decoration: none;
+    border-bottom: 0.3vh solid white;
+    width: 60vw;
+    font-family: 'Gratina';
+    text-align: center;
+    padding-top: 2.5vh;
+}
+
+/***********deroulant burger PARAMETRE JS*******/
+
+.active{
+    left: 0vw;
+    animation: hello 0.7s ease-in-out;
+}
+
+.close{
+    position: absolute;
+    bottom: 34vh;
+    animation: goodbye 0.7s ease-in-out;
+}
+
+#close_burger{
+    font-size: 5vw;
+}
+
+#close_burger:hover{
+    cursor: pointer;
+}
+
+@keyframes hello{
+    0%{
+        left: 100vw;
+        opacity: 10%;
+    }
+    100%{
+        left: 0;
+        opacity: 100%;
+    }
+}
+
+@keyframes goodbye{
+    0%{
+        right: 0vw;
+        opacity: 100%;
+    }
+    100%{
+        right: -100vw;
+        opacity: 10%;
+    }
+}
+
+
+/***************CORP PAGE****************/
+
+.homepage>h1{
+    margin-top: 19vh;
+    font-weight: 700;
+    line-height: 120%;
+    font-size: 10vw;
+}
+
+.homepage>.texteMain{
+    font-weight: 300;
+    font-size: 1em;
+    width: 80vw;
+}
+
+.fleche{    
+    margin-top: 30vh;
+    text-align: center;
+    font-size: 8vw;
+    animation: arrow-scroll 1.5s infinite ease;
+}
+
+@keyframes arrow-scroll {
+    0% {transform: translateY(0)}
+    50% {transform: translateY(-17px)}
+    55% {transform: translateY(-17px)}
+    100% {transform: translateY(0)}
+}
+
+.scroll{
+    text-align: center;
+    margin-top: 2vh;
+}
+
+/**********************************PROJET****************************************/
+
+.une_image, .deux_image{
+    display: none;
+}
+
+#projet{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*annimation sur d'opacité*/
+.une_image>a>img, .deux_image>div>a>img{
+    transition: all 0.3s ease-in-out;
+}
+
+.une_image>a>img:hover, .deux_image>div>a>img:hover{
+    cursor: pointer;
+    filter: opacity(28%);
+}
+
+/*titre*/
+
+#projet>h2{
+    padding: 9vh 0 7vh;
+    font-size: 7vw;
+}
+
+/*****taille des carrés*********/
+
+.tel_projet{
+    width: 63vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tel_projet>a{
+    width: 100%;
+    display: block;
+}
+
+.tel_projet>a>img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+/***************Afficher les titres*********/
+
+
+#projet>div>div:hover .titre1{
+    opacity: 1;
+}
+
+.deux_image>.image_deux:hover .titre2, .deux_image>.image_trois:hover .titre3{
+    opacity: 1;
+}
+
+.titre1, .titre2, .titre3{
+    opacity: 0;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.3vw;
+    font-weight: 600;
+}
+
+.titre1{
+    top: 45%;
+    left: 27%;  
+}
+
+.titre2{
+    top: 45%;
+    left: 13%;
+}
+
+.titre3{
+    top: 45%;
+    left: 20%;
+}
+
+
+
+/**********************A PROPOS*********************************/
+
+
+.apropos{
+    background-color: rgb(255, 255, 255);
+    color: rgb(10, 12, 30);
+    padding-left: 9vw;
+    padding-right: 9vw;
+}
+
+.image_ordi{
+    display: none;
+}
+
+.apropos>div>h3{
+    font-weight: 700;
+    padding: 12vh 0 5vh 0;
+}
+
+.text_presentation{
+    font-weight: 300;
+    font-size: 4vw;
+
+}
+
+.text_cv{   
+    font-weight: 600;
+    margin-top: 7vh;
+    font-size: 4.2vw;
+}
+
+/*bouton*/
+
+
+.apropos>div>a{
+    margin-top: 3vh;
+    width: 50vw;
+    height: 11vw;
+    background-color: rgb(244, 244, 244);
+    box-shadow: 2px 2px 6px 1px #c3c3c3 ;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-size: 3.2vw;
+}
+
+.apropos>div>a>img{
+    width: 18px;
+    margin-right: 8px;
+    animation: telechargement 1.5s infinite ease;
+}
+
+@keyframes telechargement {
+    0% {transform: translateY(0)}
+    50% {transform: translateY(-3px)}
+    55% {transform: translateY(-3px)}
+    100% {transform: translateY(0)}
+}
+
+.apropos>div>a:hover{
+    box-shadow: inset 2px 2px 6px 1px #d4d4d4;
+}
+
+/*****************************contact*******************************/
+
+.contact{
+    background-color: rgb(10, 12, 30);
+    padding-left: 9vw;
+    padding-right: 9vw;
+}
+
+.contact>h3{
+    padding: 13vw 0 3vw 0;
+}
+
+.contact>p{
+    font-weight: 300;
+    font-size: 4.2vw;
+    margin-top: 2vh;
+}
+
+.contact>.div_mail>img{
+    width: 32px;
+    margin-top: 8vh;
+}
+
+.mon_email{
+    text-decoration: underline;
+    font-size: 4.4vw;
+}
+
+form{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    width: 70vw;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    padding: 10px 8px 19px 8px;
+    margin-bottom: 4vh;
+    color: white;
+    font-family: var(--police-text);
+    outline: none;
+}
+
+textarea{
+    width: 70vw;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    padding: 10px 0px 0px 7px;
+    margin-bottom: 4vh;
+    color: white;
+    font-family: var(--police-text);
+    outline: none;
+    animation: color 3s ease;
+}
+
+.contact>form>button{
+    width: 70vw;
+    height: 7vh;
+    margin-top: 3vh;
+    background-color: rgb(244, 244, 244);
+    border: none;
+}
+
+.contact>form>button:hover{
+    background: linear-gradient(90deg, rgba(121,9,119,1) 7%, rgba(0,212,255,1) 100%);
+}
+
+
+
+
+
+
+

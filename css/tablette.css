@@ -1,0 +1,61 @@
+@media(min-width: 470px)
+{
+
+    /****************************HOME PAGE***********************************/
+
+    h3{
+        font-size: 6vw;
+    }
+
+    .burger>div{
+        margin: 15px;
+    }
+
+    #close_burger{
+        font-size: 4vw;
+    }
+
+    .fond{
+        background-size: 100%;
+    }
+
+    .homepage>.texteMain, .scroll, .text_presentation, .text_cv, .contact>p{
+        font-size: 3.4vw;
+    }
+
+    .contact>form>button{
+        font-size: 2.8vw;
+    }
+
+    .contact>form>button{
+        height: 8vh;
+    }
+
+    .apropos>div>a{
+        height: 10vw;
+        width: 40vw;
+        font-size: 2.8vw;
+    }
+
+    .apropos>div>a>img{
+        width: 30px;
+    }
+
+    .contact>.div_mail>img{    
+        width: 6vw;
+    }
+
+    .mon_email{
+        font-size: 3vw;
+    }
+
+    .homepage>h1{             
+        font-size: 8vw;
+    }
+
+
+    /************************************PROJET******************************/
+
+
+}
+

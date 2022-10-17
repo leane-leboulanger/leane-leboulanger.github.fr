@@ -1,0 +1,47 @@
+/**************import css*************/
+@import url("telephone.css");
+@import url("tablette.css");
+@import url("ordi.css");
+
+@import url("presentation_projet.css");
+
+/**************import police*************/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/kara');
+
+
+
+/**************page aceuilleee*************/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --police-text: 'Poppins', 'Courier New', Courier, monospace;  
+}
+
+h1, h3, h2{
+    font-family: 'KARA', sans-serif;
+}
+
+h3{
+    font-size: 7vw;
+}
+
+button{
+    font-family: var(--police-text);
+}
+
+
+
+/*annimation rond souris*/
+
+
+u{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+

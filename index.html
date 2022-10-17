@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO </title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js" async></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('f4_Xzv-qU0ZlTYdm0');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_w3xudyh', 'template_51podkj', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                        document.getElementById('contact-form').reset();
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+</head>
+<body>
+
+<body>
+
+    <div class='cursor' id="cursor"></div>
+<!-------------------------------------HOME PAGE------------------------------->
+<section id="main" class="fond">
+
+    <!--------------------HEADER------------------------->
+    <header>
+        <p>PORTFOLIO</p>
+        <div id="burger">
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <!--------------DEROULER MENU BURGER--------------->
+
+    <div id="deroulantBurger" class="sidenav">
+        <div class="div_link_burger">
+        <a href="#main">HOME</a>
+        <a href="#projet">PROJET</a>
+        <a href="#apropos">A PROPOS</a>
+        <a href="#contact">CONTACT</a>
+        <div id="close_burger" class="close">CLOSE</div>
+        </div>
+    </div>
+
+    <!---------------presentation-------------------->
+    <section class="homepage">
+        <h1>LÉANE LE BOULANGER</h1>
+        <p class="texteMain">Front-end developer & web designer</p>
+        <p class="fleche">↓</p>
+        <p class="scroll">Scroll</p>
+    </section>
+
+</section>
+
+
+<!--------------------------------page création--------------------------------------------->
+
+
+<section id="projet">
+
+
+        <h2>MES PROJETS.</h2>
+
+        <div>
+            <div class="une_image">
+            
+                <a href="#projet1"><img src="media/webdesign.png" alt=""></a>
+                <div class="titre1"> < Front end & web design > </div>
+                
+            </div>
+    
+            <div class="deux_image">
+                <div class="image_deux">
+                    <a href="#projet2"><img src="media/charte_graphique_carte.png" alt=""></a>
+                    <div class="titre2"> < Charte graphique > </Charte></div>
+                </div>
+                <div class="image_trois">
+                    <a href="#projet3"><img src="media/photographie_tel.png" alt=""></a>
+                    <div class="titre3"> < Photographie > </div>
+                </div> 
+            </div>
+
+            
+            <div class="tel_projet">
+                <a class="une_image" href="#projet1"><img src="media/webdesign.png" alt=""></a>
+                <a class="image_deux" href="#projet2"><img src="media/chartegraphique_tel.png" alt=""></a>
+                <a class="image_trois" href="#projet3"><img src="media/photographie.png" alt=""></a>
+            </div>
+        </div>
+
+</section>
+
+
+<!------------------DEPLIANT------------------->
+
+
+<article class="projet1">
+
+    <div class="texte_pj">
+        <a href="#projet" id="projet1"><button> <  Retourner aux projets</button></a>
+
+        <h3>FRONT END & WEB DESIGN</h3>  
+        <p>Projet en autonomie - 2021</p>
+        <p>🍜 Ozu est un site de recette de soupe.</br></br> 
+            
+            ✏️Je me suis inspirée de plusieurs sites de cuisine afin de créer la maquette sur Adobe XD.</br></br>
+            À l'aide de php, j'ai créé un système d'inscription et de connexion utilisateur relié a une base de données avec MySql.</br>       
+            Ce projet m'a permis de m'améliorer globalement sur mes compétences en codage.</p>
+        
+        <div>
+            <p>OUTILS</p>
+            <button>ADOBE XD</button>
+            <button>HTML</button>
+            <button>CSS</button>
+            <button>JS</button>
+            <button>PHP</button>
+        </div>
+    </div>
+
+    <div class="img_pj">
+        <img src="media/webdesign.png" alt="">
+        <img src="media/mockupfinio.jpg" alt="">
+        <img src="media/image3ozu (2).png" alt="">
+    </div>
+
+</article>
+
+
+<!-------------Projet2---------------->
+<article class="projet2">
+
+    <div class="texte_pj">
+        <a href="#projet" id="projet2"><button> <  Retourner aux projets</button></a>
+
+        <h3>CHARTE GRAPHIQUE</h3>
+        <p>Projet ecole - 2022</p>
+        <p>📌 Soupe au lait est un restaurant dijonnais végan, proposant des plats issus de produits locaux et bio. </br></br> 
+            👀 J'ai réalisé son identité visuelle</br></br>
+            --------</br>
+            Ma volonté a été de créer un logo dynamique et mémorisable, concordant avec les valeurs du restaurant.</br>
+            J'ai produit une charte graphique, contenant les couleurs, les typographies, les règles d'utilisations, etc.. </p>
+        
+        <div>
+            <p>OUTILS</p>
+            <button>ILLUSTRATOR</button>
+            <button>PHOTOSHOP</button>
+            <button>FIGMA</button>
+        </div>
+    </div>
+
+    <div class="img_pj">
+        <img src="media/chartegraphique_un.png" alt="">
+        <img src="media/chartegraphique_deux.png" alt="">
+        <img src="media/chartegraphique_trois.png" alt="">
+    </div>
+    
+</article>
+<!-------------Projet3---------------->
+<article class="projet3">
+
+    <div class="texte_pj">
+        <a href="#projet" id="projet3"><button> <  Retourner aux projets</button></a>
+
+        <h3>PHOTOGRAPHIE</h3>
+        <p>Projet ecole - 2022</p>
+        <p>📸 J'ai réalisé plusieurs séries de photographie pendant les cours et autonomie. </br></br>
+
+            🔗 J'ai travaillé sur des packshots d'objet, des photos de portrait et de paysage.</br></br>
+            -------------</br>
+            Les photos ne devaient comporter aucune retouche, ce qui obligeait à avoir la meilleure captation photo.</br>
+            
+            Cela m'a permis d'apprendre les règles de la photo, le vocabulaire et a utilise un appareil. Ce qui est bien différent de la camera de portable.</p>
+        
+        <div>
+            <p>OUTILS</p>
+            <button>Canon EOS 700D</button>
+
+        </div>
+    </div>
+
+    <div class="img_pj">
+        <img src="media/photographie.png" alt="">
+        <img src="media/projet1.png" alt="">
+        <img src="media/projet1.png" alt="">
+    </div>
+    
+</article>
+
+<!------------------------a propos-------------------------------->
+
+<section id="apropos" class="apropos">
+        <img class="image_ordi" src="media/fond_mainpage4.jpg" alt="truc">
+        <div>
+            <h3>A PROPOS</h3>
+            <p class="text_presentation">Je m'appelle Léane. </br>
+
+                <u>Curieuse, passionnée, créative,</u> je suis constamment à la recherche de nouvelles idées, d'objectifs et de défis ! </br></br> Attirée par les arts et le monde du web, j'accorde ces deux passions afin de développer des <u>compétences polyvalentes</u>.</br></br>
+                Actuellement étudiante en <u>BUT MMI</u> ( métiers du multimédia et de l'internet) je me suis familiarisée à de nombreux domaines comme le développement web, la conception d'identité graphique et visuelle, l'UI ET l'UX design, ou encore la photographie.</p>
+    
+            <p class="text_cv">Télécharger mon cv ici :</p>
+            <a href="media/CV LEANE (1).pdf" target="_blank"><img src="media/telechargement.svg" alt="fleche"> Ciriculum vitae</a> 
+        </div>
+    
+</section>
+      
+<!------------------------contact-------------------------------->
+
+<section id="contact" class="contact">
+        <h3>CONTACT</h3>
+        <p>Contcatez moi par mail, ou grace au formaulaire de contact</p>
+
+        <div class="div_mail">
+            <img src="media/lettre.svg" alt="lettre">
+            <p class="mon_email">leaneleboulanger@gmail.com</p>
+        </div>
+
+    <form action="" method="" id="contact-form">
+
+        <input type="email" name="user_email" placeholder="E-mail"> 
+
+        <textarea name="message" placeholder="Message"></textarea>
+        <input type="hidden" name="contact_number">
+        <button>Envoyer</button>
+    </form>
+
+</section>  
+
+<footer>
+    
+</footer>
+
+</body>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="js/reveal.js"></script>
+
+</html>
+
