@@ -324,7 +324,7 @@ header>p{
     background-color: rgb(10, 12, 30);
     padding-left: 9vw;
     padding-right: 9vw;
-    margin-top: 30vh;
+    position: relative;
 }
 
 .contact>h3{
