@@ -260,5 +260,8 @@
         transition: all 200ms ease-out;
     }
 
+     .apropos{
+        height: 120vh;
+    }
 
 }
