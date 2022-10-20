@@ -37,8 +37,8 @@ h3{
     font-size: 7vw;
 }
 
-button{
-    font-family: var(--police-text);
+button, .titre1, .titre2, .titre3{
+    font-family: 'Poppins', 'Courier New', 'monospace';
 }
 
 
