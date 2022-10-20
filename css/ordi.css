@@ -259,5 +259,9 @@
         width: 30px;
         transition: all 200ms ease-out;
     }
+    
+     #projet1>img, #projet2>img, #projet3>img{
+        overflow-y: hidden;
+    }
 
 }
