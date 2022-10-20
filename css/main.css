@@ -23,6 +23,7 @@
     padding: 0;
     box-sizing: border-box;
     --police-text: 'Poppins', 'Courier New', Courier, monospace;  
+    overflow-x: hidden; 
 }
 
 h1, h3, h2{
