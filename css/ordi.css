@@ -1,9 +1,5 @@
 @media(min-width: 1000px)
 {
-
-    body{
-        overflow-x: hidden; 
-    }
     
     .homepage{
         display: flex;
