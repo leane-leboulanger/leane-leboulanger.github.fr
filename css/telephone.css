@@ -167,7 +167,7 @@ header>p{
 }
 
 #projet{
-    background-color: #0d0f28;
+    background-color: black;
     color: white;
     display: flex;
     flex-direction: column;
@@ -316,7 +316,7 @@ header>p{
 /*****************************contact*******************************/
 
 .contact{
-    background-color: #0d0f28;
+    background-color: black;
     padding-left: 9vw;
     padding-right: 9vw;
 }
